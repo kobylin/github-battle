@@ -21,6 +21,9 @@ var PromptContainer = React.createClass({
 	handleSubmitUser: function(e) {
 		e.preventDefault();
 		var username = this.state.username;
+		if(!username) {
+			return;
+		}
 
 		this.setState({
 			username: ''
