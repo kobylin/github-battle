@@ -28,6 +28,8 @@ var PromptContainer = React.createClass({
 
 		console.log(this.context);
 		
+		//quite wierd way to pass data between states
+		//any other way?		
 		if(this.props.routeParams.playerOne) {
 			this.context.router.push({
 				pathname: '/battle',
